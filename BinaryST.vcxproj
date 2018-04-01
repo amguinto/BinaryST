@@ -150,8 +150,12 @@
     <ClInclude Include="BinaryST.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BinaryST.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="BinaryST.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt" />
