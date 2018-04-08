@@ -20,5 +20,8 @@ int main() {
 	bst.AddNode(4);
 
 	bst.PrintTraversal();
+
+	bst.DeleteNode(4);
+	bst.PrintTraversal();
 	return 0;
 }
