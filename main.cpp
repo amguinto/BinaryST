@@ -22,6 +22,6 @@ int main() {
 	bst.PrintTraversal();
 
 	bst.DeleteNode(4);
-	bst.PrintTraversal();
+	//bst.PrintTraversal();
 	return 0;
 }
