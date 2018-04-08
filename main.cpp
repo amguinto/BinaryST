@@ -10,21 +10,15 @@ using namespace std;
 
 int main() {
 
-	vector<int> Tree = { 50, 27, 25, 34, 10, 4 };
+	//vector<int> Tree = { 50, 27, 25, 34, 10, 4 };
 	BinaryST bst;
 
-	ManipulateTree mt;
+	bst.AddNode(5);
+	bst.AddNode(2);
+	bst.AddNode(1);
+	bst.AddNode(6);
+	bst.AddNode(4);
 
-	//Test.
-	mt.PrintTraversalOrder();
-
-	//cout << "Setting up tree..." << endl;
-	//Create Tree.
-	for (unsigned int i = 0; i < Tree.size(); i++) {
-		mt.AddNode(Tree[i]);
-		cout << "Adding " << Tree[i] << " into the tree." << endl;
-	}
-	mt.PrintTraversalOrder();
-
+	bst.PrintTraversal();
 	return 0;
 }
