@@ -20,14 +20,9 @@ private:
 public:
 	BinaryST();
 	~BinaryST();
-	Node* CreateNode(int data);
-	
-	void AddNode(int data);
-	
-	
+	Node* CreateNode(int data);	
+	void AddNode(int data);		
 	void PrintTraversal();
-	
-
 	void DeleteNode(int data);
 	
 };

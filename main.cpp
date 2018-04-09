@@ -15,13 +15,14 @@ int main() {
 
 	bst.AddNode(5);
 	bst.AddNode(2);
-	bst.AddNode(1);
+	/*bst.AddNode(1);
 	bst.AddNode(6);
-	bst.AddNode(4);
+	bst.AddNode(4);*/
 
 	bst.PrintTraversal();
+	cout << endl;
+	bst.DeleteNode(2);
 
-	bst.DeleteNode(4);
-	//bst.PrintTraversal();
+	bst.PrintTraversal();
 	return 0;
 }
