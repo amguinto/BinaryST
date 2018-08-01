@@ -16,6 +16,10 @@ private:
 	void RecursiveAdd(int data, Node* addPtr);
 	void RecursivePrintTraversal(Node* temp);
 	void RecursiveDelete(int data, Node* temp);
+	
+	void RecursivePreOrder ( Node* root );
+	void RecursiveInOrder ( Node* root );
+	void RecursivePostOrder ( Node* root );
 
 public:
 	BinaryST();
@@ -25,6 +29,10 @@ public:
 	void PrintTraversal();
 	void DeleteNode(int data);
 	
+	//Depth First Search
+	void PreOrderTraversal ( );
+	void InOrderTraversal ();
+	void PostOrderTraversal ();
 };
 
 
