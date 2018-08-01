@@ -1,6 +1,7 @@
 /*
 Andy Matthew Guinto
 */
+#include <queue>
 
 class BinaryST {	
 private:
@@ -21,6 +22,8 @@ private:
 	void RecursiveInOrder ( Node* root );
 	void RecursivePostOrder ( Node* root );
 
+	void RecursiveBreadthFirstTraversal ( Node* root, std::queue<Node*>& q );
+
 public:
 	BinaryST();
 	~BinaryST();
@@ -29,10 +32,13 @@ public:
 	void PrintTraversal();
 	void DeleteNode(int data);
 	
-	//Depth First Search
+	//Depth First Search.
 	void PreOrderTraversal ( );
 	void InOrderTraversal ();
 	void PostOrderTraversal ();
+
+	//Level-Order Traversal.
+	void BreadthFirstTraversal ();
 };
 
 
