@@ -48,6 +48,12 @@ int main() {
 	std::cout << "Breadth First Traversal " << std::endl;
 	bst.BreadthFirstTraversal ();
 	std::cout << std::endl;
+	std::cout << std::endl;
+
+	std::cout << "Height of Tree: " << std::endl;
+	bst.FindHeight ();
+	std::cout << std::endl;
+	std::cout << std::endl;
 
 	return 0;
 }

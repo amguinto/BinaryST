@@ -18,11 +18,13 @@ private:
 	void RecursivePrintTraversal(Node* temp);
 	void RecursiveDelete(int data, Node* temp);
 	
-	void RecursivePreOrder ( Node* root );
-	void RecursiveInOrder ( Node* root );
-	void RecursivePostOrder ( Node* root );
+	void RecursivePreOrder ( Node*& root );
+	void RecursiveInOrder ( Node*& root );
+	void RecursivePostOrder ( Node*& root );
 
-	void RecursiveBreadthFirstTraversal ( Node* root, std::queue<Node*>& q );
+	void RecursiveBreadthFirstTraversal ( Node*& root, std::queue<Node*>& q );
+
+	int RecursiveFindHeight ( Node*& root );
 
 public:
 	BinaryST();
@@ -39,6 +41,9 @@ public:
 
 	//Level-Order Traversal.
 	void BreadthFirstTraversal ();
+
+	//Find Height.
+	void FindHeight ();
 };
 
 
